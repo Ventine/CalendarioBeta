@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos .css">
+	<link rel="shortcut icon" href="assets/icono-pestana.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>Formfit Calendario organizador</title>
+</head>
+<body>
+<!-- 
+	--Sección de inicio-
+	<div class="container_inicio">
+
+	--Video de fondo-		
+		<video class="container__video" autoplay="true" loop="true" muted="true" >
+			<source src="assets/container_inicio.mp4" type="video/mp4">
+		</video>
+		<div class="container_inicio_contenido">
+
+	--Titulo y parrafo del inicio-	
+			<div class="container_inicio_descripcion"> 
+				<div class="container_inicio_descripcion_h1">
+					<h1>Formfit Calendario de tareas</h1>					
+				</div>
+				<div class="container_inicio_descripcion_p">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor..</p>					
+				</div>
+			</div>
+
+		--Boton del inicio-			
+			<div class="container_inicio_boton">
+				<button id="button_ingreso">Organizar horario</button>
+			</div>
+		</div>
+	</div> -->
+	<div class="container_ingreso">
+		<img src="assets/background_containers.jpg" class="container__img" alt="background">
+		<div class="container_ingreso_tareas">
+			<div class="container_ingreso_tareas_datos">
+				<div class="container_ingreso_tareas_datos_titulo"> <h1>Agregar Tarea</h1> </div>
+				<form id="formulario_ingreso">
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre de tarea" required><br>
+					<input type="number" name="tiempo" id="tiempo" placeholder="Tiempo de ejecución" min="30" step="30" required><br>
+					<select id="prioridad">
+						<option>Alta</option>
+						<option selected >Media</option>
+						<option>Baja</option>
+					</select><br>
+					<button id="enviar_tarea">Guardar tarea</button>
+				</form>
+			</div>
+			<div class="container_ingreso_tareas_comodines">
+				<div class="container_ingreso_tareas_datos_titulo"> <h1>Comodines</h1> </div>
+				<button id="Comodin_1">Comodin 1</button>
+				<button id="Comodin_1">Comodin 2</button>
+				<button id="Comodin_1">Comodin 3</button>
+				<button id="Comodin_1">Comodin 4</button>				
+			</div>
+		</div>
+		<div class="container_ingreso_orden">
+			<div class="container_ingreso_orden_fechas">
+			<div class="container_ingreso_tareas_datos_titulo"> <h1>Semana a aplicar</h1> </div>				
+				<input type="text" name="" placeholder="Inicio">
+				<input type="text" name="" placeholder="Final">
+			</div>
+			<div class="container_ingreso_orden_listado">
+				<div class="container_ingreso_tareas_datos_titulo"> <h1>Tareas agregadas</h1>	</div>		
+				<table class="container_ingreso_orden_listado_customTable">
+					<tr>
+						<thead>
+						<th>Tarea</th>
+						<th>Tiempo</th>
+						<th>Prioridad</th>
+						<th>Modificar</th>
+						<th>Eliminar</th>
+						</thead>
+					</tr>
+					<tr>
+						<td>Hola</td>
+						<td>30min</td>
+						<td>Alta</td>
+						<td> <button><span class="material-symbols-outlined">brush</span></button> </td>
+						<td> <button><span class="material-symbols-outlined">delete</span></button> </td>						
+					</tr>
+				</table>
+			    </div>		
+			</div>
+		</div>
+	</div>
+</body>
+</html>

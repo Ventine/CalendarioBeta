@@ -1,0 +1,310 @@
+	/*Importando estilos externos*/
+
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); 
+
+	/*variables globales*/
+
+	:root{
+		--blanco :#ffffff;
+		--negro: #000000;
+		--wood: #e2b05a;
+		--verde: #82bda7;
+		--gris: #787878;
+		--light: rgba(249, 249, 249,0.8);
+	}
+
+	/*Estilos globales*/
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	/*Sección de inicio*/
+
+	.container_inicio{
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.container_inicio_contenido{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: rgba(130, 189, 167, 0.2);
+
+	}
+
+	.container__video{
+		height: 100vh !important;
+		object-fit: cover;
+		position: absolute;
+		max-width: 100%;
+		background-repeat: no-repeat;
+		left: 0;
+		top: 0;
+		z-index: -10;
+		opacity: 0.8;
+	}
+
+	.container_inicio_descripcion_h1{
+		margin: -80px 0px 65px 70px;
+	}
+
+	.container_inicio_descripcion_h1 h1{
+		font-size: 48px;
+		font-family: 'Roboto', sans-serif;
+		color: var(--verde);
+		font-style: italic;
+		font-weight: bold;
+
+	} 
+
+	.container_inicio_descripcion_p{
+		max-width: 650px;
+		margin: 0px 60px 65px 70px;
+	}
+
+	.container_inicio_descripcion_p p{
+		font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+		color: var(--blanco);
+	}
+
+	.container_inicio_boton{
+		height: 150px;
+		width: 300px;
+		margin: 40px 40px 0px 20px;	
+	}
+
+	.container_inicio_boton button{
+		width: 200px;
+		height: 50px;
+		border-radius: 7px;
+		cursor: pointer;
+		background-color: var(--blanco);
+		color: var(--verde);
+		border: 1px solid var(--verde);	
+		font-size: 15px;
+	}
+
+	.container_inicio_boton button:hover{
+		background-color: var(--verde);
+		color: var(--blanco);
+		border: 1px solid var(--blanco);
+		font-style: italic;
+	}
+
+	/*Sección de ingreso*/
+
+	.container_ingreso{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.container__img{
+		height: 100vh !important;
+		object-fit: cover;
+		position: absolute;
+		max-width: 100%;
+		background-repeat: no-repeat;
+		left: 0;
+		top: 0;
+		z-index: -10;
+		opacity: 0.8;
+	}
+
+	.container_ingreso_tareas{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 80vh;
+		max-width: 420px;
+		min-width: 310px;
+
+	}
+
+	.container_ingreso_tareas_datos{
+		margin-top: -50px;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		padding: 10px 0;
+	}
+
+	.container_ingreso_tareas_datos_titulo{
+		margin: 25px 20px;
+	}
+
+	.container_ingreso_tareas_datos_titulo{
+		color: var(--wood);
+	}
+
+	#formulario_ingreso{
+		margin: 15px;
+	}
+
+	#formulario_ingreso > input{
+		margin: 10px 20px;
+		padding: 7px 8px;	
+		border-radius: 5px;	
+		border: 2px solid var(--verde);		
+
+	}
+
+	#formulario_ingreso > input::placeholder{
+		color: var(--verde);
+		font-size: 12px;
+	}
+
+	#formulario_ingreso > select{
+		margin: 10px 10px 10px 60px;
+		padding: 7px 8px;	
+		border-radius: 5px;	
+		color: var(--verde);
+		border: 2px solid var(--verde);					
+	}
+
+	#prioridad > option{
+		color: var(--verde);
+		font-size: 12px;
+	}	
+
+	#formulario_ingreso > button{
+		margin: 10px 10px 10px 46px;
+		padding: 10px 10px;	
+		border-radius: 5px;	
+		color: var(--verde);
+		background-color: var(--blanco);
+		border: 2px solid var(--verde);		
+	}
+
+	#formulario_ingreso > button:hover{	
+		cursor: pointer;
+		color: var(--blanco);
+		background-color: var(--verde);
+		border: 2px solid var(--blanco);		
+	}
+
+	.container_ingreso_tareas_comodines{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		padding: 6px 21px;
+
+	}
+
+	.container_ingreso_tareas_comodines > button{
+		margin: 10px ;
+		padding: 10px;	
+		border-radius: 5px;	
+		color: var(--verde);
+		background-color: var(--blanco);
+		border: 2px solid var(--verde);	
+	}
+
+	.container_ingreso_tareas_comodines > button:hover{
+		cursor: pointer;
+		color: var(--blanco);
+		background-color: var(--verde);
+		border: 2px solid var(--blanco);
+	}
+
+	.container_ingreso_orden{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 80vh;
+		max-width: 600px;
+		min-width: 500px;
+		margin-left: -70px;
+	}
+
+	.container_ingreso_orden_fechas{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		padding: 6px 21px;
+		width: 70%;
+		padding: 10px 15px 45px;
+		margin-top: -160px;
+	}
+
+	.container_ingreso_orden_listado{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		padding: 6px 21px;
+		width: 100%;
+		padding: 10px 15px 45px;
+		margin-top: -90px;
+	}	
+
+	table.container_ingreso_orden_listado_customTable {
+	  width: 100%;
+	  background-color: var(--blanco);
+	  border-collapse: collapse;
+	  border: 1px solid var(--wood);
+	  color: var(--verde);
+	}
+
+	table.container_ingreso_orden_listado_customTable th {
+	  border: 1px solid var(--wood);
+	  padding: 5px;
+	  color: white;
+	}
+
+	table.container_ingreso_orden_listado_customTable td {
+		text-align: center;
+	}
+
+	table.container_ingreso_orden_listado_customTable td {
+	  border: 1px solid var(--wood);
+	  padding: 5px;
+	  color: var(--verde);
+	}
+
+
+
+	table.container_ingreso_orden_listado_customTable thead {
+	  background-color: var(--verde) !important;
+	}
+
+	table.container_ingreso_orden_listado_customTable button{
+		background-color: var(--blanco);
+		color: var(--verde);
+		border: 1px solid var(--verde);
+		border-radius: 20px;
+		padding: 2px;
+	}
+
+	table.container_ingreso_orden_listado_customTable button:hover{
+		color: var(--blanco) !important;
+		background-color: var(--verde);
+		border: 1px solid var(--blanco);
+		cursor: pointer;
+	}
+
+	table.container_ingreso_orden_listado_customTable span{
+		color: var(--verde);
+	}
+
