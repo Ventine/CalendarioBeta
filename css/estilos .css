@@ -113,8 +113,6 @@
 		position: absolute;
 		max-width: 100%;
 		background-repeat: no-repeat;
-		left: 0;
-		top: 0;
 		z-index: -10;
 		opacity: 0.8;
 	}
@@ -125,9 +123,9 @@
 		justify-content: space-evenly;
 		align-items: center;
 		height: 80vh;
-		max-width: 420px;
-		min-width: 310px;
-
+		max-width: 500px;
+		min-width: 400px;
+		margin-top: -100px;
 	}
 
 	.container_ingreso_tareas_datos{
@@ -151,38 +149,39 @@
 	}
 
 	#formulario_ingreso > input{
-		margin: 10px 20px;
-		padding: 7px 8px;	
+		margin: 8px 12px;
+		padding: 5px 6px;	
 		border-radius: 5px;	
 		border: 2px solid var(--verde);		
 
 	}
 
 	#formulario_ingreso > input::placeholder{
-		color: var(--verde);
+		color: var(--negro);
 		font-size: 12px;
 	}
 
 	#formulario_ingreso > select{
-		margin: 10px 10px 10px 60px;
+		margin: 8px ;
 		padding: 7px 8px;	
 		border-radius: 5px;	
-		color: var(--verde);
+		color: var(--negro);
 		border: 2px solid var(--verde);					
 	}
 
 	#prioridad > option{
-		color: var(--verde);
+		color: var(--negro);
 		font-size: 12px;
 	}	
 
 	#formulario_ingreso > button{
-		margin: 10px 10px 10px 46px;
-		padding: 10px 10px;	
+		margin: 10px 10px 10px 156px;
+		padding: 14px 18px;	
 		border-radius: 5px;	
 		color: var(--verde);
 		background-color: var(--blanco);
-		border: 2px solid var(--verde);		
+		border: 2px solid var(--verde);	
+		font-size: 14px;	
 	}
 
 	#formulario_ingreso > button:hover{	
@@ -192,7 +191,76 @@
 		border: 2px solid var(--blanco);		
 	}
 
-	.container_ingreso_tareas_comodines{
+	.container_ingreso_orden_listado{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		width: 100%;
+		padding: 10px 15px 45px;
+		width: 500px;
+		margin-top: -50px;
+	}	
+
+	.container_ingreso_orden_listado_customTable {
+	  width: 100%;
+	  background-color: var(--blanco);
+	  border-collapse: collapse;
+	  border: 1px solid var(--wood);
+	  color: var(--negro);
+	}
+
+	.container_ingreso_orden_listado_customTable th {
+	  border: 1px solid var(--wood);
+	  padding: 4px;
+	  color: white;
+	}
+
+	.container_ingreso_orden_listado_customTable td {
+		text-align: center;
+	}
+
+	.container_ingreso_orden_listado_customTable td {
+	  border: 1px solid var(--wood);
+	  padding: 4px;
+	  color: var(--negro);
+	}
+
+
+
+	.container_ingreso_orden_listado_customTable thead {
+	  background-color: var(--verde) !important;
+	}
+
+	.container_ingreso_orden_listado_customTable button{
+		background-color: var(--blanco);
+		color: var(--negro);
+		border: 1px solid var(--negro);
+		border-radius: 20px;
+		padding: 1px;
+	}
+
+	.container_ingreso_orden_listado_customTable button:hover{
+		color: var(--verde) !important;
+		border: 1px solid var(--verde);
+		cursor: pointer;
+	}
+
+	.container_ingreso_orden{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 80vh;
+		max-width: 680px;
+		min-width: 520px;
+		margin-left: -70px;
+	}
+
+	.container_ingreso_orden_fechas{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -201,7 +269,22 @@
 		border-radius: 8px;
 		background-color: var(--light);
 		padding: 6px 21px;
+		width: 70%;
+		padding: 10px 15px 45px;
+		margin-top: -95px;
+	}
 
+	.container_ingreso_tareas_comodines{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		border: 2px solid var(--wood);
+		border-radius: 8px;
+		background-color: var(--light);
+		padding: 6px 21px;
+		margin: -20px 10px 10px;
+		max-width: 500px
 	}
 
 	.container_ingreso_tareas_comodines > button{
@@ -220,91 +303,4 @@
 		border: 2px solid var(--blanco);
 	}
 
-	.container_ingreso_orden{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		height: 80vh;
-		max-width: 600px;
-		min-width: 500px;
-		margin-left: -70px;
-	}
-
-	.container_ingreso_orden_fechas{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		border: 2px solid var(--wood);
-		border-radius: 8px;
-		background-color: var(--light);
-		padding: 6px 21px;
-		width: 70%;
-		padding: 10px 15px 45px;
-		margin-top: -160px;
-	}
-
-	.container_ingreso_orden_listado{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		border: 2px solid var(--wood);
-		border-radius: 8px;
-		background-color: var(--light);
-		padding: 6px 21px;
-		width: 100%;
-		padding: 10px 15px 45px;
-		margin-top: -90px;
-	}	
-
-	table.container_ingreso_orden_listado_customTable {
-	  width: 100%;
-	  background-color: var(--blanco);
-	  border-collapse: collapse;
-	  border: 1px solid var(--wood);
-	  color: var(--verde);
-	}
-
-	table.container_ingreso_orden_listado_customTable th {
-	  border: 1px solid var(--wood);
-	  padding: 5px;
-	  color: white;
-	}
-
-	table.container_ingreso_orden_listado_customTable td {
-		text-align: center;
-	}
-
-	table.container_ingreso_orden_listado_customTable td {
-	  border: 1px solid var(--wood);
-	  padding: 5px;
-	  color: var(--verde);
-	}
-
-
-
-	table.container_ingreso_orden_listado_customTable thead {
-	  background-color: var(--verde) !important;
-	}
-
-	table.container_ingreso_orden_listado_customTable button{
-		background-color: var(--blanco);
-		color: var(--verde);
-		border: 1px solid var(--verde);
-		border-radius: 20px;
-		padding: 2px;
-	}
-
-	table.container_ingreso_orden_listado_customTable button:hover{
-		color: var(--blanco) !important;
-		background-color: var(--verde);
-		border: 1px solid var(--blanco);
-		cursor: pointer;
-	}
-
-	table.container_ingreso_orden_listado_customTable span{
-		color: var(--verde);
-	}
 

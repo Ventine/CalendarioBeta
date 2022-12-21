@@ -4,22 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilos .css">
+	<link rel="stylesheet" type="text/css" href="css/calendarStyles.css">	
 	<link rel="shortcut icon" href="assets/icono-pestana.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<title>Formfit Calendario organizador</title>
 </head>
 <body>
 <!-- 
-	--Sección de inicio-
 	<div class="container_inicio">
 
-	--Video de fondo-		
 		<video class="container__video" autoplay="true" loop="true" muted="true" >
 			<source src="assets/container_inicio.mp4" type="video/mp4">
 		</video>
 		<div class="container_inicio_contenido">
 
-	--Titulo y parrafo del inicio-	
 			<div class="container_inicio_descripcion"> 
 				<div class="container_inicio_descripcion_h1">
 					<h1>Formfit Calendario de tareas</h1>					
@@ -31,8 +29,6 @@
 					consequat. Duis aute irure dolor..</p>					
 				</div>
 			</div>
-
-		--Boton del inicio-			
 			<div class="container_inicio_boton">
 				<button id="button_ingreso">Organizar horario</button>
 			</div>
@@ -44,30 +40,22 @@
 			<div class="container_ingreso_tareas_datos">
 				<div class="container_ingreso_tareas_datos_titulo"> <h1>Agregar Tarea</h1> </div>
 				<form id="formulario_ingreso">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre de tarea" required><br>
-					<input type="number" name="tiempo" id="tiempo" placeholder="Tiempo de ejecución" min="30" step="30" required><br>
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre de tarea" required>
+					<input type="number" name="tiempo" id="tiempo" placeholder="Tiempo de ejecución" min="30" step="30" required>
 					<select id="prioridad">
 						<option>Alta</option>
 						<option selected >Media</option>
 						<option>Baja</option>
-					</select><br>
+					</select>
 					<button id="enviar_tarea">Guardar tarea</button>
 				</form>
 			</div>
 			<div class="container_ingreso_tareas_comodines">
 				<div class="container_ingreso_tareas_datos_titulo"> <h1>Comodines</h1> </div>
 				<button id="Comodin_1">Comodin 1</button>
-				<button id="Comodin_1">Comodin 2</button>
-				<button id="Comodin_1">Comodin 3</button>
-				<button id="Comodin_1">Comodin 4</button>				
-			</div>
-		</div>
-		<div class="container_ingreso_orden">
-			<div class="container_ingreso_orden_fechas">
-			<div class="container_ingreso_tareas_datos_titulo"> <h1>Semana a aplicar</h1> </div>				
-				<input type="text" name="" placeholder="Inicio">
-				<input type="text" name="" placeholder="Final">
-			</div>
+				<button id="Comodin_2">Comodin 2</button>
+				<button id="Comodin_3">Comodin 3</button>
+			</div>				
 			<div class="container_ingreso_orden_listado">
 				<div class="container_ingreso_tareas_datos_titulo"> <h1>Tareas agregadas</h1>	</div>		
 				<table class="container_ingreso_orden_listado_customTable">
@@ -88,9 +76,59 @@
 						<td> <button><span class="material-symbols-outlined">delete</span></button> </td>						
 					</tr>
 				</table>
-			    </div>		
-			</div>
+			</div>				
 		</div>
+		<div class="container_ingreso_orden">
+			<div class="container_ingreso_orden_fechas">
+			<div class="container_ingreso_tareas_datos_titulo"> <h1>Semana a aplicar</h1> </div>				
+				<div class="calendario_final">
+					<div class="contianer">
+				      <div class="calendar">
+				        <div class="calendar-header">
+				          <span class="month-picker" id="month-picker"> May </span>
+				          <div class="year-picker" id="year-picker">
+				            <span class="year-change" id="pre-year">
+				              <pre><</pre>
+				            </span>
+				            <span id="year">2020 </span>
+				            <span class="year-change" id="next-year">
+				              <pre>></pre>
+				            </span>
+				          </div>
+				        </div>
+				 
+				        <div class="calendar-body">
+				          <div class="calendar-week-days">
+				            <div>Dom</div>
+				            <div>Lun</div>
+				            <div>Mar</div>
+				            <div>Mie</div>
+				            <div>jue</div>
+				            <div>Vie</div>
+				            <div>Sab</div>
+				          </div>
+				          <div class="calendar-days">
+				          </div>
+				        </div>
+				        <div class="calendar-footer">
+				        </div>
+				        <div class="date-time-formate">
+				          <div class="day-text-formate">TODAY</div>
+				          <div class="date-time-value">
+				            <div class="time-formate">02:51:20</div>
+				            <div class="date-formate">23 - julio - 2022</div>
+				          </div>
+				        </div>
+				        <div class="month-list"></div>
+				      </div>
+				    </div>				
+				</div>
+			</div>
+		<div class="btnbtn">
+			<button>btn</button>
+		</div>						    	
+		</div>	
 	</div>
 </body>
+	<script type="text/javascript" src="js/Calendar.js"></script>
 </html>
