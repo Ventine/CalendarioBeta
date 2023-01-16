@@ -118,6 +118,7 @@
     justify-content: flex-end;
     align-items: center;
   }
+
   #year:hover{
     cursor: pointer;
     transform: scale(1.2);
@@ -279,8 +280,7 @@
     }
   }
   @media (max-width:375px) {
-    .month-list>div{
-  
+    .month-list>div{  
       margin: 5px 0px;
     }
   }

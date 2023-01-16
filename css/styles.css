@@ -229,8 +229,6 @@
 	  color: var(--negro);
 	}
 
-
-
 	.container_ingreso_orden_listado_customTable thead {
 	  background-color: var(--verde) !important;
 	}
@@ -303,4 +301,155 @@
 		border: 2px solid var(--blanco);
 	}
 
+	.btn_generar_horario{
+		background-color: var(--blanco);
+		color: var(--wood);
+		width: 200px;
+		height: 80px;
+		border-radius: 10px;
+		border: 3px solid var(--wood);
+		font-size: 19px;
+		font-weight: bold;
+	}
 
+	.btn_generar_horario:hover{
+		background-color: var(--blanco);
+		color: var(--verde);
+		border: 5px solid var(--verde);		
+		cursor: pointer;
+		font-style: italic;
+
+	}
+
+	.horario-grid{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.horario_organizado{
+		justify-content: center;
+		align-items: center;
+		margin-left: 100px;
+	}
+
+	.horario-titulo > h1{
+		color: var(--blanco);
+		text-shadow: 1px 1px var(--verde);
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.dias{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.hora{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.box-1{
+		height: 75px;
+		width: 140px;
+		background-color: var(--blanco);
+		border: 2px solid var(--verde);
+	}
+
+	.box-1 > h1{
+		color: var(--wood);
+		font-size: 22px;
+		margin: 15px;
+	}
+
+	.box-2{
+		height: 140px;
+		width: 140px;
+		background-color: var(--blanco);
+		border: 2px solid var(--verde);		
+	}
+
+	.box-active{
+		background-color: #e1b7ed;
+	}
+
+	.box-active-dos{
+		background-color: #a0ded6;
+	}
+
+	.box-active-tres{
+		background-color: #f4fad2;
+	}
+
+	.horario_botones{
+		margin-left: 300px ;
+		margin-top: 70px;
+	}
+
+	.btn_horario-aleatorio{
+		background-color: var(--blanco);
+		color: var(--wood);
+		width: 200px;
+		height: 80px;
+		border-radius: 10px;
+		border: 3px solid var(--wood);
+		font-size: 19px;
+		font-weight: bold;
+	}
+
+	.btn_horario-aleatorio:hover{
+		background-color: var(--blanco);
+		color: var(--verde);
+		border: 5px solid var(--verde);		
+		cursor: pointer;
+		font-style: italic;
+
+	}
+
+	.btn_horario-imprimir{
+		background-color: var(--blanco);
+		color: var(--verde);
+		width: 200px;
+		height: 80px;
+		border-radius: 10px;
+		border: 3px solid var(--verde);
+		font-size: 19px;
+		font-weight: bold;
+	}
+
+	.btn_horario-imprimir:hover{
+		background-color: var(--blanco);
+		color: var(--wood);
+		border: 5px solid var(--wood);		
+		cursor: pointer;
+		font-style: italic;
+	}
+
+	.display-ingreso{
+		display: none;
+	}
+
+	.display-horario{
+		display: none;
+	}
+
+	@media (max-width: 1170px){
+		.horario_organizado{
+			margin-left: 30px;
+		}
+	}
+
+	@media (max-width: 1050px){
+		.horario_organizado{
+			margin-left: 10px;
+		}
+	}
+
+	@media (max-width: 1000px){
+		.horario_organizado{
+			margin-left: 0px;
+		}
+	}

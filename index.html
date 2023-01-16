@@ -3,38 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos .css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/calendarStyles.css">	
 	<link rel="shortcut icon" href="assets/icono-pestana.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<title>Formfit Calendario organizador</title>
+	<title>Calendario organizador</title>
 </head>
 <body>
-<!-- 
-	<div class="container_inicio">
 
+	<div class="container_inicio">
 		<video class="container__video" autoplay="true" loop="true" muted="true" >
 			<source src="assets/container_inicio.mp4" type="video/mp4">
 		</video>
 		<div class="container_inicio_contenido">
-
-			<div class="container_inicio_descripcion"> 
+			<div class="container_inicio_descripcion">
 				<div class="container_inicio_descripcion_h1">
-					<h1>Formfit Calendario de tareas</h1>					
+					<h1>Calendario de tareas</h1>					
 				</div>
 				<div class="container_inicio_descripcion_p">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor..</p>					
+					<p>Ingresa tus tareas, dales tiempo y prioridad, ahora espera la magia, tendrás un horario
+					elaborado para poder seguir tu día a día, de manera organizada aprovechando el máximo de tu
+					tiempo.</p>	 				
 				</div>
 			</div>
 			<div class="container_inicio_boton">
 				<button id="button_ingreso">Organizar horario</button>
 			</div>
 		</div>
-	</div> -->
-	<div class="container_ingreso">
+	</div> 
+	<div class="container_ingreso display-ingreso" id="display-ingreso">
 		<img src="assets/background_containers.jpg" class="container__img" alt="background">
 		<div class="container_ingreso_tareas">
 			<div class="container_ingreso_tareas_datos">
@@ -52,9 +49,9 @@
 			</div>
 			<div class="container_ingreso_tareas_comodines">
 				<div class="container_ingreso_tareas_datos_titulo"> <h1>Comodines</h1> </div>
-				<button id="Comodin_1">Comodin 1</button>
-				<button id="Comodin_2">Comodin 2</button>
-				<button id="Comodin_3">Comodin 3</button>
+				<button id="Comodin_1">Gimnasio</button>
+				<button id="Comodin_2">Meditar</button>
+				<button id="Comodin_3">Yoga</button>
 			</div>				
 			<div class="container_ingreso_orden_listado">
 				<div class="container_ingreso_tareas_datos_titulo"> <h1>Tareas agregadas</h1>	</div>		
@@ -69,8 +66,8 @@
 						</thead>
 					</tr>
 					<tr>
-						<td>Hola</td>
-						<td>30min</td>
+						<td>Trabajar</td>
+						<td>8 horas</td>
 						<td>Alta</td>
 						<td> <button><span class="material-symbols-outlined">brush</span></button> </td>
 						<td> <button><span class="material-symbols-outlined">delete</span></button> </td>						
@@ -124,11 +121,72 @@
 				    </div>				
 				</div>
 			</div>
-		<div class="btnbtn">
-			<button>btn</button>
+		<div >
+			<button class="btn_generar_horario" id="button_horario">Generar horario</button>
 		</div>						    	
 		</div>	
+	</div> 
+	<div class="horario display-horario" id="display-horario">
+		<img src="assets/background_containers.jpg" class="container__img" alt="background">	
+			<div class="horario_organizado">
+				<div class="horario-titulo">
+					<h1>Horario organizado</h1>
+				</div>
+				<div class="horario-grid">
+					<div class="dias">
+						<div class="box-1"><h1>Lunes</h1></div>
+						<div class="box-1"><h1>Martes</h1></div>
+						<div class="box-1"><h1>Miercoles</h1></div>
+						<div class="box-1"><h1>Jueves</h1></div>
+						<div class="box-1"><h1>Viernes</h1></div>
+						<div class="box-1"><h1>Sabado</h1></div>
+						<div class="box-1"><h1>Domingo</h1></div>
+					</div>
+					<div class="hora">
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active-dos"></div>
+						<div class="box-2 box-active-dos"></div>
+					</div>
+					<div class="hora">
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2"></div>
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2"></div>
+						<div class="box-2"></div>
+						<div class="box-2 box-active"></div>
+					</div>	
+					<div class="hora">
+						<div class="box-2"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2 box-active-dos"></div>
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2"></div>
+						<div class="box-2 box-active-dos"></div>
+					</div>	
+					<div class="hora">
+						<div class="box-2 box-active"></div>
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active-dos"></div>
+						<div class="box-2"></div>
+						<div class="box-2 box-active"></div>
+						<div class="box-2 box-active-tres"></div>
+						<div class="box-2 box-active-dos"></div>
+					</div>																								
+				</div>
+			<div class="horario_botones">
+				<button class="btn_horario-aleatorio">Aleatorio horario</button>
+				<button class="btn_horario-imprimir">Imprimir</button>			
+			</div>				
+			</div>
 	</div>
+
 </body>
 	<script type="text/javascript" src="js/Calendar.js"></script>
+	<script type="text/javascript" src="js/display.js"></script>
 </html>
